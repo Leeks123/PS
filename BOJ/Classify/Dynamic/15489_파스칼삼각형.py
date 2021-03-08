@@ -14,6 +14,6 @@ for i in range(r+w):
 answer = 0
 for i in range(r-1, r-1+w):
     for j in range(c-1, c+1+i-r):
-        print(p[i][j], i, j)
+        # print(p[i][j], i, j)
         answer += p[i][j]
 print(answer)
