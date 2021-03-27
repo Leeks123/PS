@@ -8,7 +8,7 @@ for _ in range(n):
     maze.append(arr)
 
 
-def bfs(start, graph, target):
+def bfs(start, graph):
     q = deque([start])
     graph[start[0]][start[1]] = -1
     # 하 우 상 좌
@@ -31,4 +31,4 @@ def bfs(start, graph, target):
     return -1*graph[n-1][m-1]
 
 
-print(bfs((0, 0), maze, (n-1, m-1)))
+print(bfs((0, 0), maze))
